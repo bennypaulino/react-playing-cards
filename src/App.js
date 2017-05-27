@@ -10,6 +10,15 @@ class App extends Component {
   }
   render() {
     const deck = this.state.deck;
+    const cards = [];
+    deck.cards.forEach(function(card, index) {
+      const htmlElement = (
+        <p key={index}>
+          {card.rank} of {card.suit}
+        </p>
+      );
+      cards.push(htmlElement);
+    });
     return (
       <div className="App">
         <div className="App-header">
@@ -18,7 +27,7 @@ class App extends Component {
             Object Oriented Programming and Templating in JavaScript
           </p>
         </div>
-        {JSON.stringify(deck)}
+        {cards}
       </div>
     );
   }
