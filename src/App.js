@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Deck from './helpers/Deck.js';
 import './App.css';
 
 class App extends Component {
   render() {
+    const deck = new Deck();
     return (
       <div className="App">
         <div className="App-header">
@@ -12,6 +13,7 @@ class App extends Component {
             Object Oriented Programming and Templating in JavaScript
           </p>
         </div>
+        {JSON.stringify(deck)}
       </div>
     );
   }
