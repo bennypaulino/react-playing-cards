@@ -3,8 +3,8 @@ import Card from './Card.js';
 
 export default class Deck {
   constructor() {
-    const ranks = ["Ace", 2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King"];
-    const suits = ["Spades", "Diamonds", "Clubs", "Hearts"]
+    const ranks = ["ace", 2, 3, 4, 5, 6, 7, 8, 9, 10, "jack", "queen", "King"];
+    const suits = ["spades", "diamonds", "clubs", "hearts"]
     this.cards = [];
 
     ranks.forEach( (rank) => {
