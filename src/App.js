@@ -8,7 +8,7 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <h1>React Playing Cards</h1>
-          <p>
+          <p className="subtitle">
             Object Oriented Programming and Templating in JavaScript
           </p>
         </div>

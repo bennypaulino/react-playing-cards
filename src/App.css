@@ -1,24 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700|Lato');
+
+body {
+  background: rgba(181,29,47,1);
+  background: -moz-linear-gradient(top, rgba(181,29,47,1) 0%, rgba(62,60,60,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(181,29,47,1)), color-stop(100%, rgba(62,60,60,1)));
+  background: -webkit-linear-gradient(top, rgba(181,29,47,1) 0%, rgba(62,60,60,1) 100%);
+  background: -o-linear-gradient(top, rgba(181,29,47,1) 0%, rgba(62,60,60,1) 100%);
+  background: -ms-linear-gradient(top, rgba(181,29,47,1) 0%, rgba(62,60,60,1) 100%);
+  background: linear-gradient(to bottom, rgba(181,29,47,1) 0%, rgba(62,60,60,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b51d2f', endColorstr='#3e3c3c', GradientType=0 );
+  background-attachment: fixed;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App-header {
+  height: 90px;
+  padding: 50px;
+  color: white;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.subtitle {
+  font-family: "Lato";
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  word-spacing: 0.2em;
+}
+
+.App-header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 80px;
+  font-family: 'Comfortaa';
+
 }
 
 .App-intro {
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.card {
+  background-color: white;
+  width: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 70px;
+  -webkit-box-shadow: 3px 4px 5px 0px rgba(163,163,163,1);
+  -moz-box-shadow: 3px 4px 5px 0px rgba(163,163,163,1);
+  box-shadow: 3px 4px 5px 0px rgba(163,163,163,1);
+  flex: 0 0 auto;
+}
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 100px;
+}
+
+.card img {
+  width: 200px;
+}
+
+.hvr-grow-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
+  -webkit-transform: scale(1.1) rotate(4deg);
+  transform: scale(1.1) rotate(4deg);
 }
